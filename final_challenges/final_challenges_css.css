@@ -66,16 +66,18 @@ li a:hover {
     background-color: grey;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .column {
-    float: left;
+    text-align: left;
     width: 50%;
     height: 100px;
+    padding: 10px;
   }
 
 .column h3 {
@@ -85,3 +87,54 @@ li a:hover {
 .column p {
     color: white;
 }
+
+h2 {
+    text-align: center;
+}
+
+h2:hover {
+    background-color: darkred;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.container1 {
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    color: red;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 5s ease;
+    background-color:black;
+  }
+
+  .container1:hover .overlay {
+    opacity: 1;
+  }
